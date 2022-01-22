@@ -1,107 +1,19 @@
 import "../styles/App.scss";
+import React, { useState } from "react";
 import data from "../data/data.json";
+import Header from "./Header";
+import PokeList from "./PokeList.js";
 
 function App() {
+  const [pokemons] = useState(data);
+
   return (
     <div className="page">
       {/* header */}
-      <header className="header">
-        <h1 className="header__title">My list of pokemons</h1>
-        <form>
-          <input
-            className="header__search"
-            autoComplete="off"
-            type="search"
-            name="search"
-            placeholder="Filter pokemons by name"
-          />
-        </form>
-      </header>
+      <Header />
 
       <main>
-        {/* contact list */}
-        <ul className="pokemon__list">
-          <li className="pokemon__item">
-            <p className="pokemon__name">
-              <label className="pokemon__label">Nombre:</label>Lola Martinez
-            </p>
-            <p className="pokemon__phone">
-              <label className="pokemon__label">Teléfono:</label>
-              <a href="tel:603256289" title="Pulsa aquí para llamar a Lola">
-                603256289
-              </a>
-            </p>
-            <p className="pokemon__mail">
-              <label className="pokemon__label">Email:</label>
-              <a
-                href="mailto:lmartinez@adalab.es"
-                title="Pulsa aquí para escribir a Lola"
-              >
-                lmartinez@adalab.es
-              </a>
-            </p>
-          </li>
-          <li className="pokemon__item">
-            <p className="pokemon__name">
-              <label className="pokemon__label">Nombre:</label>Martha Houston
-            </p>
-            <p className="pokemon__phone">
-              <label className="pokemon__label">Teléfono:</label>
-              <a href="tel:612435678" title="Pulsa aquí para llamar a Martha">
-                612435678
-              </a>
-            </p>
-            <p className="pokemon__mail">
-              <label className="pokemon__label">Email:</label>
-              <a
-                href="mailto:mhouston@adalab.es"
-                title="Pulsa aquí para escribir a Martha"
-              >
-                mhouston@adalab.es
-              </a>
-            </p>
-          </li>
-          <li className="pokemon__item">
-            <p className="pokemon__name">
-              <label className="pokemon__label">Nombre:</label>Lillie Moore
-            </p>
-            <p className="pokemon__phone">
-              <label className="pokemon__label">Teléfono:</label>
-              <a href="tel:632456789" title="Pulsa aquí para llamar a Lillie">
-                632456789
-              </a>
-            </p>
-            <p className="pokemon__mail">
-              <label className="pokemon__label">Email:</label>
-              <a
-                href="mailto:lillie@adalab.es"
-                title="Pulsa aquí para escribir a Lillie"
-              >
-                lillie@adalab.es
-              </a>
-            </p>
-          </li>
-          <li className="pokemon__item">
-            <p className="pokemont__name">
-              <label className="pokemon__label">Nombre:</label>Jane Norton
-            </p>
-            <p className="pokemon__phone">
-              <label className="pokemon__label">Teléfono:</label>
-              <a href="tel:603256679" title="Pulsa aquí para llamar a Jane">
-                603256679
-              </a>
-            </p>
-            <p className="pokemon__mail">
-              <label className="pokemon__label">Email:</label>
-              <a
-                href="mailto:janenorton@adalab.es"
-                title="Pulsa aquí para escribir a Jane"
-              >
-                janenorton@adalab.es
-              </a>
-            </p>
-          </li>
-        </ul>
+        <PokeList data={pokemons} />
 
         {/* new contact */}
         <form className="new-pokemon__form">

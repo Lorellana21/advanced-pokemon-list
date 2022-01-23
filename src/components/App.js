@@ -1,16 +1,23 @@
 import "../styles/App.scss";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import data from "../data/data.json";
 import Header from "./Header";
 import PokeList from "./PokeList.js";
 
 function App() {
-  const [pokemons] = useState(data);
+  const [pokemons, setPokemons] = useState(data);
+  const [filterPokemon, setFilterPokemon] = useState("");
+
+  const handleFilter = (data) => {
+    if (data.key === "name") {
+      setFilterPokemon(data.value);
+    }
+    console.log(filterPokemon);
+  };
 
   return (
     <div className="page">
-      {/* header */}
-      <Header />
+      <Header handleFilter={handleFilter} />
 
       <main>
         <PokeList data={pokemons} />

@@ -29,8 +29,8 @@ const Pokemon = (props) => {
         </p>
         <p className="pokemon__name">
           <label className="pokemon__label">Types:</label>
-          <ul className="pokemon__types">{renderTypes()}</ul>
         </p>
+        <ul className="pokemon__types">{renderTypes()}</ul>
       </article>
     </>
   );

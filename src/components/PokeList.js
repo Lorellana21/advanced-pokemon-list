@@ -2,13 +2,14 @@ import Pokemon from "./Pokemon";
 import PropTypes from "prop-types";
 
 const PokeList = (props) => {
-  const pokeItems = props.data.map((item, id) => {
+  const pokeItems = props.pokemons.map((pokemon, id) => {
     return (
       <li key={id} className="pokemon__list">
-        <Pokemon item={item} />
+        <Pokemon item={pokemon} />
       </li>
     );
   });
+
   return <ul className="pokemon__list">{pokeItems}</ul>;
 };
 

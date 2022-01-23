@@ -1,11 +1,9 @@
 import React from "react";
 
 const Header = (props) => {
-  const handleChange = (ev) => {
-    props.handleFilter({
-      value: ev.target.value,
-      key: "name",
-    });
+  const handleInput = (ev) => {
+    //console.log("Han cambiado el input con el value ", ev.target.value," con el evento es",ev);
+    props.handleFilter(ev.target.value);
   };
   return (
     <header className="header">
@@ -15,10 +13,10 @@ const Header = (props) => {
           className="header__search"
           autoComplete="off"
           type="search"
-          id="name"
-          name="name"
+          id="search"
+          name="search"
           placeholder="Filter pokemons by name"
-          onChange={handleChange}
+          onChange={handleInput}
         />
       </form>
     </header>

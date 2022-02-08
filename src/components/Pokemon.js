@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "../styles/components/Pokemon.scss";
 
 const Pokemon = (props) => {
   const renderTypes = () => {
@@ -20,7 +21,7 @@ const Pokemon = (props) => {
           alt={props.item.name}
         />
         <p className="pokemon__name">
-          <label className="pokemon__label">Nombre:</label>
+          <label className="pokemon__label">Name:</label>
           {props.item.name}
         </p>
         <p className="pokemon__name">

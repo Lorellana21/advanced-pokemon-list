@@ -1,5 +1,6 @@
 import Pokemon from "./Pokemon";
 import PropTypes from "prop-types";
+import "../styles/components/Pokemon-list.scss";
 
 const PokeList = (props) => {
   const pokeItems = props.pokemons.map((pokemon, id) => {

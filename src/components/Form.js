@@ -2,25 +2,42 @@ import "../styles/components/Form.scss";
 import Button from "./Button";
 import Input from "./Input";
 
-const Form = () => {
+const Form = (props) => {
 
     return (
 
         <>
             <form className="new-pokemon__form">
                 <h2 className="new-pokemon__title">Add a new pokemon</h2>
-                <Input></Input>
-                <Input></Input>
-                <Input></Input>
-                <Input></Input>
-                <Button></Button>
-                {/* <input
-                    className="new-pokemon__input"
-                    type="text"
-                    name="name"
-                    id="name"
-                    placeholder="Name"
+                <Input
+                    inputName="name"
+                    inputId="name"
+                    inputPlaceholder="Name"
+                    inputValue={props.name}
+                    handleChange={props.handleName}
                 />
+                <Input
+                    inputName="types"
+                    inputId="types"
+                    inputPlaceholder="Type"
+                    inputValue={props.type1}
+                    handleChange={props.handleType1}
+                />
+                <Input
+                    inputName="types"
+                    inputId="types"
+                    inputPlaceholder="Type"
+                    inputValue={props.type2}
+                    handleChange={props.handleType2}></Input>
+                <Input></Input>
+                <Button
+                    inputType="submit"
+                    inputValue="Add"
+                    inputDisabled={props.isValidForm() === false}
+                    handleClick={props.handleForm}
+                />
+                {/* <input
+
                 <input
                     className="new-pokemon__input"
                     type="text"

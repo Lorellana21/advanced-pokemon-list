@@ -3,14 +3,14 @@
 Have you had you a look at [Pokemon List](https://lorellana21.github.io/pokemon-list/)?
 Because this is an evolution of such an exercise 🚀
 
-✔ The application should allow filtering by pokemon name:
+✔ Here it is possible to filter by pokemon name:
 
-      🔶 When typing in the header input, pokemons whose name does not match what is typed should be hidden.
+🔶 When typing in the header input, pokemons whose name does not match what is typed should be hidden.
 
-      🔶 Of course it should not matter if the user writes the text in upper or lower case.
+🔶 Of course, it doesn´t matter if you write the text in upper or lower case.
 
-✔ We also want the user to be able to add more pokemons to the list.
+✔ You also will be able to add more pokemons to the list (your favourite pokemons :)
 
-✔ All the data is local, so we can save it in the local storage.
+✔ As all the data is local, it will be saved in the local storage. So, next time you enter the web you can see your last added pokemons and, you can add even more.
 
 (imagen de la web)

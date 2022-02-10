@@ -1,7 +1,6 @@
 .pokemon {
     &__item {
         margin-bottom: 1rem;
-        padding: 1rem;
         width: 12rem;
         list-style: none;
         border-radius: 0.5rem;
@@ -30,18 +29,12 @@
         color: #fff;
         margin-bottom: 1rem;
         text-decoration: underline;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
     }
 
     &__name {
         text-transform: capitalize;
         text-align: center;
         font-weight: bold;
-
-        display: flex;
-        justify-content: center;
     }
     &__type {
         border: solid 1px white;

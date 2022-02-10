@@ -48,7 +48,7 @@ const Form = (props) => {
                 <Button
                     inputType="submit"
                     inputValue="Add"
-                    inputDisabled={props.isValidForm() === false}
+
                     handleClick={props.handleForm}
                 />
 

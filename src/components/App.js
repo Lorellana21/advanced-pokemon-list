@@ -1,18 +1,30 @@
-
-import React, { useState } from "react";
+import "../styles/App.scss";
+import { useEffect, useState } from 'react';
+// Importamos el servicio del local storage
+import ls from '../services/localStorage';
 import data from "../data/data.json";
 import Form from "./Form";
 import HeaderFilter from "./HeaderFilter";
 import PokeList from "./PokeList.js";
 
+
 function App() {
-  const [pokemons, setPokemons] = useState(data);
+
+  const [pokemons, setPokemons] = useState(ls.get('data', data));
   const [filter, setFilter] = useState("");
   const [name, setName] = useState("");
   const [type1, setType1] = useState("");
   const [type2, setType2] = useState("")
   const [evolution, setEvolution] = useState("");
   const [picture, setPicture] = useState("");
+
+  useEffect(() => {
+    ls.set("data", pokemons);
+  }, [pokemons]);
+
+
+
+
 
   const handleForm = (ev) => {
     pokemons.push({
@@ -27,12 +39,6 @@ function App() {
     setType1("");
     setType2("");
     setPicture("");
-
-
-    // console.log(newData);
-    // setPokemons([...pokemons, newData]);
-    // setFilter(newData);
-    // lo que ya teniamos más el array nuevo. person es el array de JSON y newData es el nuevo array modificado por la usuaria al añadirlo
   };
   console.log(pokemons);
 
@@ -66,19 +72,7 @@ function App() {
 
 
 
-  const isValidForm = () => {
 
-    if (
-      name !== "" &&
-      evolution !== "" &&
-      type1 !== "" &&
-      type2 !== ""
-    ) {
-      return true;
-    } else {
-      return false;
-    }
-  };
 
   //render
   const filteredItems = pokemons.filter((pokemon) => {
@@ -104,7 +98,7 @@ function App() {
           handlePicture={handlePicture}
           handleForm={handleForm}
 
-          isValidForm={isValidForm}
+
         />
       </main>
     </div>

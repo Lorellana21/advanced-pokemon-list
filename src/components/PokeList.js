@@ -15,7 +15,7 @@ const PokeList = (props) => {
 };
 
 PokeList.propTypes = {
-  data: PropTypes.array.isRequired,
+  pokemons: PropTypes.array.isRequired,
 };
 
 export default PokeList;

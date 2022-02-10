@@ -17,6 +17,14 @@ const Form = (props) => {
                     handleChange={props.handleName}
                 />
                 <Input
+                    inputName="evolution"
+                    inputId="evolution"
+                    inputPlaceholder="Evolution"
+                    inputValue={props.evolution}
+                    handleChange={props.handleEvolution}
+                />
+
+                <Input
                     inputName="types"
                     inputId="types"
                     inputPlaceholder="Type"
@@ -28,37 +36,22 @@ const Form = (props) => {
                     inputId="types"
                     inputPlaceholder="Type"
                     inputValue={props.type2}
-                    handleChange={props.handleType2}></Input>
-                <Input></Input>
+                    handleChange={props.handleType2}
+                />
+                <Input
+                    inputName="picture"
+                    inputId="picture"
+                    inputPlaceholder="Picture"
+                    inputValue={props.picture}
+                    handleChange={props.handlePicture}
+                />
                 <Button
                     inputType="submit"
                     inputValue="Add"
                     inputDisabled={props.isValidForm() === false}
                     handleClick={props.handleForm}
                 />
-                {/* <input
 
-                <input
-                    className="new-pokemon__input"
-                    type="text"
-                    name="types"
-                    id="types"
-                    placeholder="Types"
-                />
-                <input
-                    className="new-pokemon__input"
-                    type="text"
-                    name="evolution"
-                    id="evolution"
-                    placeholder="Evolution"
-                />
-                <input
-                    className="new-pokemon__input"
-                    type="picture"
-                    name="picture"
-                    id="picture"
-                    placeholder="Picture"
-                /> */}
 
             </form>
         </>

@@ -2,6 +2,11 @@ import "../styles/components/Input.scss";
 
 const Input = (props) => {
 
+    const handleInputChange = (ev) => {
+        props.handleChange(ev.target.value);
+
+    }
+
     return (
 
         <input
@@ -11,6 +16,7 @@ const Input = (props) => {
             id={props.inputId}
             placeholder={props.inputPlaceholder}
             value={props.inputValue}
+            onChange={handleInputChange}
         />
     )
 }

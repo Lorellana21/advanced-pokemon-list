@@ -12,6 +12,30 @@ function App() {
   const [type1, setType1] = useState("");
   const [type2, setType2] = useState("")
   const [evolution, setEvolution] = useState("");
+  const [picture, setPicture] = useState("");
+
+  const handleForm = (ev) => {
+    pokemons.push({
+      "name": name,
+      "evolution": evolution,
+      "types": [type1, type2],
+      "url": picture
+    })
+    setPokemons([...pokemons])
+    setName("");
+    setEvolution("");
+    setType1("");
+    setType2("");
+    setPicture("");
+
+
+    // console.log(newData);
+    // setPokemons([...pokemons, newData]);
+    // setFilter(newData);
+    // lo que ya teniamos más el array nuevo. person es el array de JSON y newData es el nuevo array modificado por la usuaria al añadirlo
+  };
+  console.log(pokemons);
+
 
 
   const handleFilter = (inputValue) => {
@@ -36,9 +60,11 @@ function App() {
     setEvolution(value);
   };
 
-  const handleForm = (ev) => {
-    console.log("Enviando datos al servidor...");
+  const handlePicture = (value) => {
+    setPicture(value);
   };
+
+
 
   const isValidForm = () => {
 
@@ -55,8 +81,8 @@ function App() {
   };
 
   //render
-  const filteredItems = data.filter((item) => {
-    return item.name.toLowerCase().includes(filter.toLowerCase());
+  const filteredItems = pokemons.filter((pokemon) => {
+    return pokemon.name.toLowerCase().includes(filter.toLowerCase());
   });
 
   return (
@@ -70,11 +96,14 @@ function App() {
           type1={type1}
           type2={type2}
           evolution={evolution}
+          picture={picture}
           handleName={handleName}
           handleType1={handleType1}
           handleType2={handleType2}
           handleEvolution={handleEvolution}
+          handlePicture={handlePicture}
           handleForm={handleForm}
+
           isValidForm={isValidForm}
         />
       </main>

@@ -1,6 +1,5 @@
 import "../styles/App.scss";
 import { useEffect, useState } from 'react';
-// Importamos el servicio del local storage
 import ls from '../services/localStorage';
 import data from "../data/data.json";
 import Form from "./Form";
@@ -23,9 +22,6 @@ function App() {
   }, [pokemons]);
 
 
-
-
-
   const handleForm = (ev) => {
     pokemons.push({
       "name": name,
@@ -45,13 +41,11 @@ function App() {
 
 
   const handleFilter = (inputValue) => {
-    //console.log("Han cambiado el input de mi hija con el valor ", inputValue);
     setFilter(inputValue);
-    //console.log(filter);
+
   };
 
   const handleName = (value) => {
-    //debugger;
     setName(value);
   };
 
@@ -72,9 +66,6 @@ function App() {
 
 
 
-
-
-  //render
   const filteredItems = pokemons.filter((pokemon) => {
     return pokemon.name.toLowerCase().includes(filter.toLowerCase());
   });

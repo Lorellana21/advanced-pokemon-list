@@ -349,19 +349,15 @@ template {
 * {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
     font-size: 1rem;
     box-sizing: border-box;
 }
 
 a {
     color: #fff;
-    // text-decoration: none;
 }
 body {
-    //background-color: rgb(53, 49, 49);
     min-height: 100vh;
-    //width: 100vw;
     color: white;
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",

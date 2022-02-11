@@ -48,7 +48,6 @@ const Form = (props) => {
                 <Button
                     inputType="submit"
                     inputValue="Add"
-
                     handleClick={props.handleForm}
                 />
 

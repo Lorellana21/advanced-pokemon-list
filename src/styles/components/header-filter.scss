@@ -13,7 +13,7 @@
 
     &__search {
         padding: 0.5rem;
-        width: 20rem;
+        width: 8rem;
         border: 2px solid #ddd;
         border-radius: 0.5rem;
         box-shadow: 0px 0px 11px 12px #bb13fe7a;
@@ -24,6 +24,9 @@
         &:focus {
             border-color: #a349a4;
             background-color: #fff;
+        }
+        &::placeholder {
+            font-size: 0.9rem;
         }
     }
 }

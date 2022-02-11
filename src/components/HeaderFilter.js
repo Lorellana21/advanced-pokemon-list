@@ -3,7 +3,6 @@ import "../styles/components/Header-filter.scss";
 
 const Header = (props) => {
   const handleInput = (ev) => {
-    //console.log("Han cambiado el input con el value ", ev.target.value," con el evento es",ev);
     props.handleFilter(ev.target.value);
   };
   return (
@@ -16,7 +15,7 @@ const Header = (props) => {
           type="search"
           id="search"
           name="search"
-          placeholder="Filter pokemons by name"
+          placeholder="Filter by name"
           onChange={handleInput}
         />
       </form>

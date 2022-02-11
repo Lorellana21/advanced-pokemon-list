@@ -3,22 +3,21 @@
 Have you had you a look at [Pokemon List](https://lorellana21.github.io/pokemon-list/)?
 Because this is an evolution of such an exercise 🚀
 
+![image](https://user-images.githubusercontent.com/81922944/153622169-bb736d17-80d1-41bf-9070-3fee9a1e61b6.png)
+
+
 ✔ Here it is possible to filter by pokemon name:
 
 🔶 When typing in the header input, pokemons whose name does not match what is typed should be hidden.
 
 🔶 Of course, it doesn´t matter if you write the text in upper or lower case.
 
-![image](https://user-images.githubusercontent.com/81922944/153565807-c415a45f-b0e6-4734-9caf-e0eea2b62865.png)
-
-
-
-
+![image](https://user-images.githubusercontent.com/81922944/153621877-a3abbbf4-ddf4-4e04-a7ec-a3d47d5a337f.png)
 
 
 ✔ You also will be able to add more pokemons to the list (your favourite pokemons :)
 
-![image](https://user-images.githubusercontent.com/81922944/153565871-7509f4f0-8596-4072-86df-509bfba7a36a.png)
+![image](https://user-images.githubusercontent.com/81922944/153622438-54b56e98-5082-4cc2-94dc-a25363f053bf.png)
 
 Here you can participate, unlike the [Pokemon List](https://lorellana21.github.io/pokemon-list/), where only the pokemon list is shown. 
 
@@ -26,7 +25,7 @@ My advice is to open this [site](https://www.pokemon.com/es/pokedex/), and searc
 Once you have chosen it, enter its name, evolution (if it has one), types (one or two), and its picture (click on the image and copy its link), in the corresponding box
 and click the ADD button. You will see your new pokemon added at the bottom of the list.
 
-![image](https://user-images.githubusercontent.com/81922944/153566596-4ee661c3-0f8e-427f-addb-c33aa55e4f8f.png)
+
 
 
 

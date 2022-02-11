@@ -9,6 +9,7 @@ Because this is an evolution of such an exercise 🚀
 
 🔶 Of course, it doesn´t matter if you write the text in upper or lower case.
 
+![image](https://user-images.githubusercontent.com/81922944/153565807-c415a45f-b0e6-4734-9caf-e0eea2b62865.png)
 
 
 
@@ -17,11 +18,27 @@ Because this is an evolution of such an exercise 🚀
 
 ✔ You also will be able to add more pokemons to the list (your favourite pokemons :)
 
+![image](https://user-images.githubusercontent.com/81922944/153565871-7509f4f0-8596-4072-86df-509bfba7a36a.png)
+
+Here you can participate, unlike the [Pokemon List](https://lorellana21.github.io/pokemon-list/), where only the pokemon list is shown. 
+
+My advice is to open this [site](https://www.pokemon.com/es/pokedex/), and search for your favourite pokemon.
+Once you have chosen it, enter its name, evolution (if it has one), types (one or two), and its picture (click on the image and copy its link), in the corresponding box
+and click the ADD button. You will see your new pokemon added at the bottom of the list.
+
+![image](https://user-images.githubusercontent.com/81922944/153566596-4ee661c3-0f8e-427f-addb-c33aa55e4f8f.png)
 
 
-✔ As all the data is local, it will be saved in the local storage. So, next time you enter the web you can see your last added pokemons and, you can add even more.
 
-## What have I learned by doing this exercise?
+
+
+
+✔ As all the data is local, it will be saved in the local storage. So, next time you log in you will be able to see the pokemon you added and you will even be able to add more.
+
+---
+
+
+## What have I learned by doing this exercise? 💪
 
 👩‍🎓 How to pass **props in three-level components**.
 That is to say, the component in the middle, ``Form``, is only transmitting props from its parent component ``App`` to its child component ``Input``. It is important to have in mind that when programming several levels of components your concern must be:

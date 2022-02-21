@@ -5,8 +5,8 @@
         list-style: none;
         border-radius: 0.5rem;
         border: 1px solid #ddd;
-        background-color: #a349a4;
-        box-shadow: 0px 0px 11px 12px #0499857a;
+        //background-color: #a349a4;
+        box-shadow: 0px 0px 11px 12px #a040a0;
         font-weight: bold;
         color: #fff;
         display: flex;
@@ -45,4 +45,27 @@
         margin: 1rem;
         list-style: none;
     }
+}
+
+//seleccionar colores de la pgina web de los tipos
+.fire {
+    background-color: #f08030;
+}
+.water {
+    background-color: #6890f0;
+}
+.bug {
+    background-color: #a8b820;
+}
+.poison {
+    background-color: #a040a0;
+}
+.flying {
+    background-color: #a890f0;
+}
+.grass {
+    background-color: #78c850;
+}
+.electric {
+    background-color: #f8d030;
 }

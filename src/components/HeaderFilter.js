@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/components/Header-filter.scss";
+import "../styles/components/HeaderFilter.scss";
 
 const Header = (props) => {
   const handleInput = (ev) => {
